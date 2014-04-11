@@ -1,0 +1,150 @@
+body {
+	margin: 0px;
+	background: url("images/background/bgr-dark.png") repeat;
+	font: 13px Tahoma;
+}
+
+p {
+	color: #000; 
+	font-family: Verdana;
+}
+
+a {
+	color: #9d457a;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.selected {
+	color: #aab39a;
+}
+
+.header {
+	background: #fff url("images/header2.jpg") center;
+	margin-bottom: 10px;
+	padding: 20px 10px;
+	border-bottom: 2px solid #b5a4af;
+}	
+
+.header h1 {
+	padding: 0px;
+	margin: 0px;
+	font-family:  Candara, Verdana;
+	color: #000;
+	text-align: center;
+	text-shadow: 0px 0px 20px rgba(228, 239, 210, 1);
+}
+
+.footer {
+	border-top: 2px solid #AAB39A;
+	background: #fff;
+	padding: 10px;
+}
+
+.nav {
+	width: 190px;
+	background: #fff;
+	float: left;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	box-shadow: 2px 1px 12px 0px rgba(50, 48, 50, 0.25);
+	padding: 2px;
+}
+
+.nav a {
+	padding: 7px;
+	display: block;
+	text-decoration: none;	
+	font-weight: bold;
+}
+
+.nav a:hover {
+	background: #f8e7f2;
+	text-decoration: underline;
+}
+
+.content {
+	min-height: 300px;
+	margin-left: 220px;
+	background: #fff;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	box-shadow: 2px 1px 12px 0px rgba(50, 48, 50, 0.25);
+}
+
+.content h2,h3,h4 {
+	margin: 0px;
+}
+
+.content img {
+	margin: 10px;
+	border: #b5a4af 1px solid;
+	max-width: 50%;	
+}
+
+.photo {
+	border-top: 1px solid #AAB39A;
+	border-bottom: 1px solid #AAB39A;
+	margin: 0 10px 10 px 0;
+	padding: 10px 0;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.photo img {
+	border: #fff 3px solid;
+	box-shadow: 2px 1px 12px 0px rgba(50, 48, 50, 0.55);
+	max-width: 95%;
+	max-height: 95%;
+}
+
+.photo p {
+	margin: 5px;
+	font-size: 12px;
+}
+
+.frame {
+	max-width: 1200px;
+	margin: auto;
+	margin-bottom: 20px;
+	width: 90%;
+	background: #E4EFD2 url("images/green.png");
+	border: 1px solid #CAD3BA;
+	box-shadow: 2px 1px 12px 0px rgba(50, 48, 50, 0.85);
+}
+
+td, th {
+	font: 13px Tahoma;
+}
+
+.TOCBox {
+	margin: 15px 0;
+}
+
+.chapter {
+	border-top: 1px solid #b5a4af;
+	width: 95%;
+	margin-top: 10px;
+}
+
+.chapter h4{
+	color: #b5a4af;
+	margin-top: 5px;	
+}
+
+.TOC a {
+	color: #aab39a;
+	padding: 2px;
+	font-weight: bold;
+}
+
+.TOC a:hover {
+	color: #9d457a;
+	background: #f8e7f2;
+	text-decoration: underline;
+}

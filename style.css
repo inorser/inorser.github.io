@@ -80,6 +80,10 @@ a:hover {
 	margin: 0px;
 }
 
+.content h4{
+	padding: 5px 0px;	
+}
+
 .content img {
 	margin: 10px;
 	border: #b5a4af 1px solid;
@@ -147,4 +151,21 @@ td, th {
 	color: #9d457a;
 	background: #f8e7f2;
 	text-decoration: underline;
+}
+
+.social img {
+	width: 24px;
+	opacity: 0.75;
+}
+
+.social:hover img{
+	opacity: 1;
+}
+
+img.trash {
+	height: 32px;
+	border: 0;
+	position: absolute;
+	z-index: 2;
+	display: none;
 }

@@ -12,9 +12,9 @@
 			<div class="nav">
 				<a href="../index.html"> Главная страница </a>
 				<a href="../cv.html"> Официальная биография </a>
-				<a href="../timetable.html"> Расписание занятий </a>
 				<a class="selected" href="../recycle.html"> Раздельный сбор </a>
 				<a href="../gardening.html"> Мои растения </a>				
+				<a href="../timetable.html"> Расписание занятий </a>
 			</div>
 			
 			<div class="content">
@@ -84,15 +84,42 @@
 				</table>
 
 				<p><u>Перейти к статье про другой вид материала</u>: бумага, металл, органика, стекло, композиты, батарейки.</p>
+
+				<p>Каждую секунду в мире выбрасывается несколько пластиковых бутылок.
+					<br/>
+					<input type="button" value="Выбросить бутылку!" onclick="recycle()"/></p>
 				
+				<img id="bottle" class="trash" src="../images/bottle.png"/>
+				<script type="text/javascript">
+					function recycle() {
+						var b = document.getElementById("bottle");
+						var x = Math.random() * 800; var y = 50; var vy = 0;
+						b.style.display = "block";
+						setInterval(fly, 10);
+						function fly() {
+							if (y > 600) {
+								y = 0;
+								b = b.cloneNode();
+								document.body.appendChild(b);
+								x = Math.random() * 800;
+								vy = 0;
+							};
 
-
+							y = y + vy;
+							vy = vy + 0.02;
+							b.style.left = x + "px";
+							b.style.top = y + "px";
+						}
+					}
+				</script>
 			</div>
 
-
 			<div class="footer">
-				<a href="http://colorscheme.ru/#5831T46Tjw0w0">Цветовая схема</a>
 				<p>&copy; Позднякова Анна, 2014</p>
+				
+				<a class="social" href="http://vk.com/shortaddress"><img src="../images/vk_button.jpg"/></a>
+				<a class="social" href="https://www.facebook.com/anna.pozdnyakova.10"><img src="../images/facebook_button.gif"/></a>
+				<a class="social" href="https://github.com/inorser/"><img src="../images/github_button.png"/></a>
 			</div>
 
 		</div>
